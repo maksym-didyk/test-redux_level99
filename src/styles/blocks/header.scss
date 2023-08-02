@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+
+  @include onPhone {
+    padding: 20px 10px;
+  }
+
+  &__logo {
+    display: flex;
+    align-self: center;
+  }
+
+  &__edit-image {
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+  }
+}
