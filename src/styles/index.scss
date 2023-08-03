@@ -1,18 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-ul,
-p {
-  margin: 0;
-}
-
-iframe {
-  display: none;
-}
-
+@import "./normalize.scss";
 @import "./utils/mixins";
 @import "./utils/variables";
 @import "./fonts/rubik.scss";

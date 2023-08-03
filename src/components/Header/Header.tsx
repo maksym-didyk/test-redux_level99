@@ -7,6 +7,10 @@ import { useAppSelector } from '../../app/hooks';
 export const Header = () => {
   const username = useAppSelector((state) => state.username);
 
+  const usernameHeader = Object.values(username).length > 2
+    ? `${username}`
+    : 'Hello, Guest!';
+
   return (
     <div className="header">
       <div className="header__logo">
@@ -16,15 +20,12 @@ export const Header = () => {
       </div>
 
       <div>
-        {Object.entries(username).length !== 0
-          ? `${username}`
-          : 'Hello, Guest!'}
-        {' '}
+        {`${usernameHeader} `}
+
         <Link to="/singup" title="Change name">
           <img className="header__edit-image" src={imgEdit} alt="Edit name" />
         </Link>
       </div>
-
     </div>
   );
 };

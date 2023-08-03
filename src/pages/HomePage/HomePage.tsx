@@ -11,7 +11,7 @@ export const HomePage = () => {
     if (!username) {
       navigate('/singup');
     }
-  }, []);
+  }, [username]);
 
   return (
     <>

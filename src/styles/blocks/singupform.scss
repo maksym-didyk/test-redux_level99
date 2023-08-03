@@ -1,13 +1,13 @@
 body {
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: $white-color;
   background-image: url("../../images/bg-xs.png");
   background-size: cover;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 18px;
-  color: #fff;
-  height: 100vh;
-
 
   @include onTablet {
     background-image: url("../../images/bg-cover.jpg");
@@ -39,7 +39,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Rubik', sans-serif;
     font-size: 15px;
     font-weight: 300;
     width: 630px;
@@ -83,7 +82,7 @@ body {
     font-weight: 500;
     line-height: 28px;
     text-align: center;
-    color: #fff;
+    color: $white-color;
     margin-bottom: 50px;
 
     @include onTablet {
@@ -94,11 +93,10 @@ body {
   &__input {
     height: 56px;
     width: 100%;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white-color;
     border-radius: 4px;
     outline: none;
     background-color: rgba(0, 0, 0, 0);
-
     font-family: Rubik;
     font-size: 19px;
     font-weight: 300;
@@ -132,26 +130,26 @@ body {
   }
 
     &__button {
-    border: 1px solid $accent-color;
-    border-radius: 4px;
-    font-family: Rubik;
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 23px;
-    letter-spacing: 0em;
-    color: #000;
-    height: 56px;
-    width: 100%;
-    cursor: pointer;
-    background-color: $accent-color;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all $transition-time; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 56px;
+      width: 100%;
+      outline: none;
+      border: 1px solid $accent-color;
+      border-radius: 4px;
+      font-family: Rubik;
+      font-size: 19px;
+      font-weight: 500;
+      line-height: 23px;
+      letter-spacing: 0em;
+      color: $black-color;
+      background-color: $accent-color;
+      transition: all $transition-time;
+      cursor: pointer;
 
     @include onTablet {
-      width: 165px;
+      width: 164px;
       margin-left: 20px;
     }
 

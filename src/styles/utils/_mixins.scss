@@ -9,9 +9,3 @@
     @content;
   }
 }
-
-@mixin onPhone {
-  @media (max-width: 639px) {
-    @content;
-  }
-}

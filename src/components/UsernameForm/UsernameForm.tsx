@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 import React, {
   FormEvent,
   useState,
@@ -41,33 +40,31 @@ export const UsernameForm: React.FC = () => {
   };
 
   return (
-    <>
-      <div className="singupform">
-        <div className="singupform__header-text">
-          Enter your name:
-        </div>
-
-        <form onSubmit={handleSubmit} className="singupform__form">
-          <CustomInput
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Your Name"
-            errors={errors}
-            errorstype={ErrorsType.username}
-            onChange={handleUsernameChange}
-          />
-
-          <div className="field">
-            <button
-              type="submit"
-              className="singupform__button"
-            >
-              Save
-            </button>
-          </div>
-        </form>
+    <div className="singupform">
+      <div className="singupform__header-text">
+        Enter your name:
       </div>
-    </>
+
+      <form onSubmit={handleSubmit} className="singupform__form">
+        <CustomInput
+          type="text"
+          name="username"
+          value={username}
+          placeholder="Your Name"
+          errors={errors}
+          errorstype={ErrorsType.username}
+          onChange={handleUsernameChange}
+        />
+
+        <div className="field">
+          <button
+            type="submit"
+            className="singupform__button"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
